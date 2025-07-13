@@ -1,0 +1,57 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Python lib related
+*.ilk
+*.pyd
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Python cache
+__pycache__
+*.pyc
+tempCodeRunnerFile.py
+
+# Executables
+*.exe
+*.out
+*.app
+
+# IDE
+.vscode
+.vs
+CMakeSettings.json
+
+# Build
+build
+out
+.DS_Store
+
+# Assets and resource data
+temp
+common/outputs
+common/scenes
+common/images
+imgui.ini

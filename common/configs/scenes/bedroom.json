@@ -1,0 +1,46 @@
+{
+	"environment": "common/assets/textures/snowwhite.jpg",
+	"model": "common/assets/scenes/pbrt/bedroom/scene.pbrt",
+	"resolution": [
+		1280,
+		720
+	],
+	"scene": {
+		"camera": {
+			"mData": {
+				"aspectRatio": 1.7777777910232544,
+				"focalDistance": 10.0,
+				"focalLength": 21.0,
+				"lensRadius": 0.0,
+				"pos": [
+					2.370241403579712,
+					1.3457224369049072,
+					2.8170578479766846
+				],
+				"target": [
+					0.2725967466831207,
+					1.1612638235092163,
+					0.5314212441444397
+				],
+				"up": [
+					0.0,
+					1.0,
+					0.0
+				]
+			}
+		},
+		"cameraController": {
+			"mData": {
+				"pitch": -0.05938878655433655,
+				"radius": 3.107776165008545,
+				"target": [
+					0.2725967466831207,
+					1.1612638235092163,
+					0.5314212441444397
+				],
+				"yaw": 0.7425358891487122
+			}
+		}
+	},
+	"spp": 0
+}

@@ -1,0 +1,45 @@
+{
+	"model": "common/assets/scenes/pbrt/breakfast/scene.pbrt",
+	"environment": "common/assets/scenes/pbrt/breakfast/textures/Skydome.pfm",
+	"resolution": [
+		1280,
+		720
+	],
+	"scene": {
+		"camera": {
+			"mData": {
+				"aspectRatio": 1.7777777910232544,
+				"focalDistance": 10.0,
+				"focalLength": 21.0,
+				"lensRadius": 0.0,
+				"pos": [
+					-0.7626758217811584,
+					2.2579219341278076,
+					4.4330973625183105
+				],
+				"target": [
+					-0.7626758217811584,
+					1.5481593608856201,
+					0.03500000014901161
+				],
+				"up": [
+					0.0,
+					1.0,
+					0.0
+				]
+			}
+		},
+		"cameraController": {
+			"mData": {
+				"pitch": -0.1599999964237213,
+				"radius": 4.454999923706055,
+				"target": [
+					-0.7626758217811584,
+					1.5481593608856201,
+					0.03500000014901161
+				],
+				"yaw": 0.0
+			}
+		}
+	}
+}

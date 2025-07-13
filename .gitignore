@@ -1,0 +1,13 @@
+.vs
+.vscode
+
+imgui.ini
+build*/
+
+common/outputs/
+common/assets/
+profiler.csv
+
+# src/lib/src/ext
+# src/lib/src/core/math/3rdparty
+# src/ext/tcnn

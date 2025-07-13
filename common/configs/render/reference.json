@@ -1,0 +1,30 @@
+{
+	"passes": [
+		{
+			"enable": true,
+			"name": "GuidedPathTracer",
+			"params": {
+				"config": "common/configs/nn/base_product_df.json",
+				"nee": false,
+				"rr": 1,
+				"max_depth": 6,
+				"bsdf_fraction": 1.0,
+				"cosine_aware": false,
+				"mis_aware": false,
+				"product_cosine": false,
+				"auto_train": false,
+				"max_train_depth": 4,
+				"max_guided_depth": 10,
+				"training_budget_spp": 0.33,
+				"training_budget_time": 0.3,
+				"batch_per_frame": 5,
+				"batch_size": 393216,
+				"mode": "offline",
+				"budget": {
+					"type": "spp",
+					"value": 64000
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"nn": {
+		"loss": {
+			"otype": "RelativeL2Luminance"
+		},
+		"optimizer": {
+			"otype": "EMA",
+			"decay": 0.99,
+			"nested": {
+				"otype": "Adam",
+				"learning_rate": 8e-3,
+				"beta1": 0.9,
+				"beta2": 0.99,
+				"epsilon": 1e-8,
+				"l2_reg": 1e-6
+			}
+		},
+		"encoding": {
+			"otype": "Composite",
+			"nested": [
+				{
+					"n_dims_to_encode": 3,
+					"otype": "Frequency",
+					"n_frequencies": 12
+				},
+				{
+					"otype": "OneBlob",
+					"n_bins": 4,
+					"n_dims_to_encode": 6
+				},
+				{
+                    "n_dims_to_encode": 6,
+                    "otype": "Identity"
+                }
+			]
+		},
+		"network": {
+			"otype": "FullyFusedMLP",
+			"activation": "ReLU",
+			"output_activation": "None",
+			"n_neurons": 64,
+			"n_hidden_layers": 5
+		}
+	}
+}
