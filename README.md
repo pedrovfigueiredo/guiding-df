@@ -93,11 +93,6 @@ You are welcome to investigate the different options under the `src/render/guide
 
 Note that modifying a parameter requires recompilation of the code to take effect.
 
-## Acknowledgements
-This project is built upon the following open-source projects:
-- [Neural Parametric Mixtures for Path Guiding](https://github.com/neuropara/neural-mixture-guiding)
-- [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn)
-
 ## Citation
 If our work is useful for your research, please consider citing:
 ```
@@ -113,3 +108,9 @@ If our work is useful for your research, please consider citing:
   DOI = {10.2312/sr.20251178}
 }
 ```
+
+## Acknowledgements
+This project was funded in part by the NSF CAREER Award #2238193.
+This project is built upon the following open-source projects:
+- [Neural Parametric Mixtures for Path Guiding](https://github.com/neuropara/neural-mixture-guiding)
+- [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn)
