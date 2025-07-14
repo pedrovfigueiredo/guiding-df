@@ -47,7 +47,7 @@ We provide helper scripts to run the code.
 
 To run the interactive mode, you can execute:
 ```bash
-python run_interactive_cmd.py
+python scripts/run_interactive_cmd.py
 ```
 This will start the interactive renderer, where you can start and stop training, visualize normals, albedo, etc. 
 You can also move the camera around the scene with WASD.
@@ -57,7 +57,7 @@ Frames are not accumulated in this mode. For accumulating frames, see the offlin
 ### Offline mode
 To run equal-time or equal-spp experiments, you can execute:
 ```bash
-python run_experiments_cmd.py
+python scripts/run_experiments_cmd.py
 ```
 
 In the script, you can specify the scene(s) to run multiple ones in sequence by modifying `test_scenes`. Command-line options include:
@@ -79,7 +79,7 @@ Results are saved in the `common/outputs` directory.
 ### Reference images
 To render path-tracing reference images, you can execute:
 ```bash
-python run_reference_cmd.py
+python scripts/run_reference_cmd.py
 ```
 This script takes similar command-line options as the offline mode. See the script for details.
 Note that rendering references may take several hours or even days, depending on the scene and resolution.
@@ -92,11 +92,6 @@ You are welcome to investigate the different options under the `src/render/guide
 - `N_DIM_OUTPUT`: Set the number of output dimensions for the neural network. By default, it is set to 16x32, as done in the paper. Note that tiny-cuda-nn pads outputs to next multiple of 16.
 
 Note that modifying a parameter requires recompilation of the code to take effect.
-
-## Acknowledgements
-This project is built upon the following open-source projects:
-- [Neural Parametric Mixtures for Path Guiding](https://github.com/neuropara/neural-mixture-guiding)
-- [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn)
 
 ## Citation
 If our work is useful for your research, please consider citing:
@@ -113,3 +108,9 @@ If our work is useful for your research, please consider citing:
   DOI = {10.2312/sr.20251178}
 }
 ```
+
+## Acknowledgements
+This project was funded in part by the NSF CAREER Award #2238193.
+This project is built upon the following open-source projects:
+- [Neural Parametric Mixtures for Path Guiding](https://github.com/neuropara/neural-mixture-guiding)
+- [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn)
